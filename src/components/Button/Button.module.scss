@@ -1,0 +1,77 @@
+.wrapper {
+    font-size: 1.6rem;
+    font-weight: 700;
+    min-width: 100px;
+    border-radius: 4px;
+    padding: 9px 16px;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: 'ProximaNova', sans-serif;
+    border: 1px solid transparent;
+    user-select: none;
+    + .wrapper {
+        margin-left: 16px;
+    }
+
+    + .menu {
+        margin-left: 0px;
+    }
+}
+
+.primary {
+    background-color: var(--primary);
+    color: var(--white);
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    }
+    margin-left: 16px;
+}
+
+.outline {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.normal {
+    border-radius: 0px;
+    border-color: rgba(22, 24, 35, 0.12);
+    font-weight: 500;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.style-icon {
+    margin-right: 8px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.menu {
+    width: 224px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    &:hover {
+        cursor: pointer;
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.separate {
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+.custom {
+    color: currentColor;
+}
+
+.followDetail {
+    font-weight: 600;
+    padding: 6px 8px;
+}

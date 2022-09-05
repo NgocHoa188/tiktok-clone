@@ -1,0 +1,25 @@
+.content {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 11px 16px;
+    position: relative;
+
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.share-text {
+    margin-left: 12px;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.wrapper {
+    width: 280px;
+    max-height: 435px;
+    overflow: overlay;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+}

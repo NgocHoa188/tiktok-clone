@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: var(--default-layout-header-width);
+    display: flex;
+    padding: 0 var(--default-layout-horizontal-spacer);
+    margin-top: 60px;
+}
+
+.content {
+    flex: 1;
+    padding: 0px 0 26px;
+}
+
+.search-content {
+    margin-left: 345px;
+}

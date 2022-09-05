@@ -1,0 +1,16 @@
+.menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 8px 8px 0px;
+
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+        border-radius: 8px;
+    }
+}
+
+.title {
+    margin-left: 8px;
+    font-size: 1.8rem;
+}

@@ -1,0 +1,163 @@
+.wrapper-account {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(22, 24, 35, 0.2);
+    margin-left: 80px;
+}
+
+.avatar-menu {
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    margin: 0px 16px 9px 0px;
+    margin-left: 0px;
+}
+
+.info {
+    flex: 1;
+}
+
+.content-name {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.name {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-right: 4px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.nickname {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.description {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.music {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-top: 4px;
+    margin-bottom: 12px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.music-icon {
+    margin-right: 5px;
+}
+
+.videos-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.video-content {
+    width: 336px;
+    border-radius: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &:hover ~ .video-control {
+        display: block;
+        color: white;
+    }
+}
+
+.video-content-list {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.btn-likes,
+.btn-comment,
+.btn-shared {
+    display: flex;
+    width: 48px;
+    height: 79px;
+    cursor: pointer;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: none;
+}
+
+.heart-icon,
+.dots-icon,
+.shared-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-bottom: 6px;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.1);
+    }
+}
+
+.likes,
+.coments,
+.shared {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.video-play {
+    position: absolute;
+    padding: 0 10px 35px 25px;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        display: block;
+    }
+}
+
+.video-volume {
+    position: absolute;
+    padding: 0 10px 35px 10px;
+    color: white;
+    cursor: pointer;
+    margin-left: 284px;
+    &:hover {
+        display: block;
+    }
+}
+
+//time
+.time {
+    font-size: 10px;
+    position: absolute;
+    padding: 0 10px 6px 0px;
+    color: white;
+    cursor: pointer;
+    margin-left: 270px;
+    &:hover {
+        display: block;
+    }
+}

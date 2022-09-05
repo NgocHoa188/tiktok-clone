@@ -1,0 +1,571 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.video-container {
+    flex: 1 1 896px;
+    background: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    flex: 0 0 544px;
+    width: 544px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0px 0px;
+}
+
+.avatar-menu {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 0px 16px;
+    margin-left: 0px;
+}
+
+.avatar-menu-child {
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    margin: 0px 16px;
+    margin-left: 0px;
+}
+
+.wrapper-account {
+    display: flex;
+    flex: 1;
+    &:hover {
+        color: inherit;
+    }
+}
+
+.account-details {
+    width: 320px;
+    height: 171px;
+    padding: 20px;
+}
+
+.details-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.details-avatar {
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+}
+
+.details-to {
+    display: flex;
+}
+
+.details-follower {
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.details-followerDesc {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.details-likes {
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.details-likesDesc {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.details-user {
+    margin-top: 8px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 22px 32px 15px;
+    position: relative;
+    flex: 0 0 82px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.username {
+    font-size: 1.4rem;
+}
+.main-container {
+    padding: 0px 32px;
+    font-size: 1.6rem;
+    line-height: 22px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(18, 18, 18, 0.12);
+}
+
+.music {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.music-icon {
+    margin-right: 8px;
+}
+
+.share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-likes,
+.btn-comment {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    background: none;
+}
+
+.heart-icon,
+.dots-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.1);
+    }
+}
+
+.like-share {
+    display: flex;
+    align-items: center;
+}
+
+.btn-comment {
+    margin-left: 20px;
+}
+
+.likes {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.btnShare {
+    background: none;
+    margin-right: 6px;
+}
+
+.link {
+    display: flex;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 2px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.link-txt {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    padding: 7px 0px 5px 12px;
+    background-color: rgba(22, 24, 35, 0.06);
+    font-size: 14px;
+    color: rgba(22, 24, 35, 0.75);
+
+    margin-bottom: 0px;
+}
+
+.copyLink {
+    background: none;
+    cursor: pointer;
+    color: rgb(22, 24, 35);
+    font-weight: 600;
+    flex: 0 0 auto;
+    padding: 7px 18px;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+    &:active {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.video {
+    height: 100vh;
+    min-height: 100vh;
+    cursor: pointer;
+}
+
+//comment
+
+.comment-container {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgba(18, 18, 18, 0.12);
+    overflow-y: scroll;
+    padding: 24px 32px;
+}
+
+.info-comment {
+    display: flex;
+}
+
+.content-comment {
+    flex: 1;
+}
+
+.likes-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 1.2rem;
+    padding-top: 24px;
+    cursor: pointer;
+}
+
+.like-comment {
+    align-items: center;
+}
+
+.more-comment {
+    display: flex;
+    padding-left: 56px;
+    cursor: pointer;
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-bottom: 0px !important;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.content-comment-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.comment-username {
+    margin-bottom: 6px;
+    font-size: 1.6rem;
+    line-height: 22px;
+}
+
+.comment-createdDate {
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 1.4rem;
+    line-height: 20px;
+}
+
+.reply-comment {
+    cursor: pointer;
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 400;
+    margin-left: 24px;
+}
+.reply-container {
+    display: flex;
+    margin: 0px 30px;
+}
+.reply {
+    display: flex;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    border-radius: 2px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.reply-txt-content {
+    flex: 1;
+    padding: 7px 0px 5px 0px;
+    font-size: 14px;
+    color: rgba(22, 24, 35, 0.75);
+    background: transparent;
+    margin-bottom: 0px;
+    border: none;
+    width: 100%;
+    display: flex;
+
+    &:focus {
+        outline: none;
+    }
+}
+.reply-txt {
+    flex: 1;
+    caret-color: var(--primary);
+    border: none;
+    &:focus {
+        outline: none;
+    }
+    &:empty::before {
+        content: 'Add comment...';
+        color: #888;
+    }
+}
+.type-comment {
+    display: flex;
+    flex: 1;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 8px;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid transparent;
+    &:focus-within {
+        border-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.reply-content {
+    flex: 1;
+}
+.comment-icon,
+.emoji-icon {
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+}
+
+.reply-post {
+    background: none;
+    margin-left: 20px;
+    color: var(--primary);
+}
+
+.reply-post-dis {
+    background: none;
+    margin-left: 20px;
+    pointer-events: none;
+    color: rgba(22, 24, 35, 0.34);
+}
+
+.hide-more {
+    display: none;
+}
+
+.more-icon {
+    margin-left: 6px;
+}
+
+.hidden-icon {
+    display: none;
+}
+
+.reply-more-container {
+    padding-left: 52px;
+    margin-bottom: 16px;
+}
+
+.content-comment-container-reply {
+    margin-bottom: 0px;
+}
+
+// emoji
+.comment-emoji-list {
+    width: 384px;
+    height: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.emoji-suggest {
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex: 0 0 38px;
+    padding: 6px;
+    margin-bottom: 0px;
+    order: 1;
+}
+
+.emoji-icon-suggest {
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 2.4rem;
+    padding: 3px;
+}
+
+.emoji-group {
+    order: 2;
+    flex: 1 1 100%;
+    overflow-y: scroll;
+}
+
+.emoji-group-ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    padding: 6px;
+}
+
+.emoji-icon-group {
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 2.4rem;
+    flex: 0 0 auto;
+    line-height: 46px;
+    margin: 5px 6px;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.notice-copy {
+    background-color: rgba(84, 84, 84, 0.92);
+    display: inline-block;
+    padding: 10px 8px;
+    pointer-events: all;
+    max-width: 100%;
+    border-radius: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+// content show more
+.content {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 11px 16px;
+    position: relative;
+
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.share-text {
+    margin-left: 12px;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+// embed dialog
+.embed-title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.embed-content {
+    font-size: 1.6rem;
+    line-height: 22px;
+    display: block;
+    padding: 0px 24px;
+    width: 100%;
+    margin-bottom: 16px;
+    border: none;
+    resize: none;
+    outline: none;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.embed-policy {
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 1.1rem;
+    line-height: 14px;
+    margin-bottom: 24px;
+    padding: 0px 24px;
+}
+
+.embed-copy {
+    background: transparent;
+    cursor: pointer;
+    border-top: solid 1px rgba(22, 24, 35, 0.12);
+    border-bottom: solid 1px rgba(22, 24, 35, 0.12);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 52px;
+}
+
+.embed-close {
+    background: transparent;
+    cursor: pointer;
+    line-height: 52px;
+    font-weight: 400;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.modal-embed {
+    height: 432px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px !important;
+}
+
+.close-video {
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.3) !important;
+    }
+}

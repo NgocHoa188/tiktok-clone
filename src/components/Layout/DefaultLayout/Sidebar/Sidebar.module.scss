@@ -1,0 +1,152 @@
+.wrapper {
+    width: 330px;
+    max-width: 1150px;
+    padding: 20px 0 26px;
+    overflow-y: hidden;
+    height: 1000px;
+
+    &:hover {
+        overflow-y: overlay;
+    }
+}
+
+.suggest-account {
+    padding: 16px 0;
+    // position: relative;
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     left: 8px;
+    //     right: 8px;
+    //     top: 0;
+    //     height: 1px;
+    //     background: rgba(22, 24, 35, 0.12);
+    //     -webkit-transform: scaleY(0.5);
+    //     -moz-transform: scaleY(0.5);
+    //     -ms-transform: scaleY(0.5);
+    //     transform: scaleY(0.5);
+    // }
+    border-bottom: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+.suggest-title {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.menu {
+    border-bottom: 1px solid rgba(22, 24, 35, 0.12);
+
+    a {
+        margin-bottom: 4px;
+    }
+}
+
+.wrapper-account {
+    display: flex;
+    align-items: center;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+        color: inherit;
+    }
+}
+
+.avatar-menu {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    margin: 9px 16px;
+    margin-left: 0px;
+}
+
+.name {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.username {
+    font-size: 1.4rem;
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 400;
+}
+
+.info {
+    flex: 1;
+}
+
+// Show details
+.account-details {
+    width: 320px;
+    height: 171px;
+    padding: 20px;
+}
+
+.details-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.details-avatar {
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+}
+
+.details-to {
+    display: flex;
+}
+
+.details-follower {
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.details-followerDesc {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.details-likes {
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.details-likesDesc {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.details-user {
+    margin-top: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.see {
+    color: rgb(254, 44, 85);
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.following-account {
+    padding: 16px 0;
+}

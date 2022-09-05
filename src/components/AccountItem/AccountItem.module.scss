@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+    }
+}
+
+.name {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.username {
+    font-size: 1.4rem;
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 400;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 9px 16px;
+}
+
+.info {
+    flex: 1;
+}
+
+.avatar-menu {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    margin: 9px 16px;
+    margin-left: 0px;
+}

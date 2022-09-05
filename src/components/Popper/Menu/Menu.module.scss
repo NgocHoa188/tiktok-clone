@@ -1,0 +1,33 @@
+.language {
+    margin-right: 8px;
+}
+
+.header {
+    position: relative;
+    height: 50px;
+    cursor: pointer;
+}
+
+.back-btn {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-list {
+    .menu-item {
+        margin-left: 0;
+    }
+}
+
+.language-content {
+    overflow-y: auto;
+}
